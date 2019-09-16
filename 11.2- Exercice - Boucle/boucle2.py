@@ -2,11 +2,11 @@
 # Données : un tableau B de n nombre réels
 # Résultat attendu : Le tableau B trié
 
+#Tableau
 B = [2, 6, 8, 5, 4, 12, 98, 34, 1]
 
-
-min = 0
-for i in range(0, len(B)):
+#Séance de calcule
+for i in range(len(B)):
     min = B[i]
     j = i - 1
     while j >= 0 and B[j] > min:
@@ -14,8 +14,7 @@ for i in range(0, len(B)):
         j = j - 1
     B[j + 1] = min
 
-for i in range(len(B)):
-    print(B[i])
 
-
-#print("Tableau final", B)
+#Impression final
+for i in B:
+    print(i)
