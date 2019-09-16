@@ -4,3 +4,12 @@
 
 a = 11
 b = 42
+
+print("Variable a :", a)
+print("Variable b :", b)
+
+a ,b = b, a
+
+print("Echange des variables...")
+print("Variable a :", a)
+print("Variable b :", b)

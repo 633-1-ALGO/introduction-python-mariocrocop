@@ -4,3 +4,10 @@
 # Indications :  Vous pouvez changer les valeurs des variables pour vos tests.
 c = 42
 d = 31
+
+if c > 0 and d > 0 or c < 0 and d < 0:
+    print("Positif")
+elif c == 0 or d == 0:  # Contraction de "Else If"
+    print("Négatif")
+else:
+    print("Nul")
