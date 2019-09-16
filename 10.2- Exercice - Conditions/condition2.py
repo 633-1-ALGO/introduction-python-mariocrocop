@@ -11,13 +11,7 @@
 year = 2016
 
 #Calcule
-if year % 4 == 0:
-    if year % 100 == 0:
-        if year % 400 == 0:
-            print("L'année est bissextil")
-        else :
-            print("L'année n'est pas bissextil")
-    else :
-        print("L'année n'est pas bissextil")
+if year%400==0 or (year%4==0 and year%100!=0):
+    print("L'année est bissextile")
 else:
-    print("L'année n'est pas bissextil")
+    print("L'année est non bissextile")
